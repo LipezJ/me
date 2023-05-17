@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Roboto:wght@400;500;900&display=swap');
+
+body {
+    background-color: #111111;
+}
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+main {
+    background-color: #111111;
+    width: 100%;
+    height: auto;
+    padding-bottom: 40px;
+    background-image: radial-gradient(currentColor 1px, transparent 1px), radial-gradient(currentColor 1px, transparent 1px);
+    background-size: calc(50 * 1px) calc(50 * 1px);
+    background-position: 0 0, calc(25 * 1px) calc(25 * 1px);
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+header, nav, ul {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    font-size: 12px;
+}
+nav, li {
+    justify-self: end;
+    margin-right : 30px;
+}
+ul {
+    list-style-type: none;
+}
+li:hover, #github:hover {
+    color: #ffffff;
+    cursor: pointer;
+}
+header {
+    background-color: #111111;
+    color: #9CA3AF;
+    border-bottom: solid 0.5px #333333;
+    position: fixed;
+    justify-content: space-between;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+    z-index: 100;
+}
+.header_comp {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 0px 20px;
+}
+#github {
+    width: 27px;
+    color: #ffffff;
+}
+#isearch {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: #282829;
+    border: none;
+    color: #ffffff;
+    padding: .2rem .5rem;
+    font-size: 12px;
+}
+#logo {
+    font-family: sans-serif;
+    font-stretch: extra-expanded;
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 50px;
+}
+#logo:hover {
+    cursor: pointer;
+    text-shadow: #ffffff 0px 0px 0.2px;
+}
+
+#general {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+}
+#me {
+    margin-top: 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+}
+#title {
+    font-size: 100px;
+    color: #ffffff;
+    font-weight: 600;
+    margin: 20px 20px;
+}
+#profileimg {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+}
+#me_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: -10px;
+    align-items: center;
+}
+#subtitle {
+    color: #4B5563;
+    font-size: 25px;
+}
+#names {
+    color: #4B5563;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#links_cont {
+    width: auto;
+    height: 2rem;
+    padding: 0.6rem 1rem;
+    background-color: #FB923C33;
+    border: rgba(251, 146, 60, 0.3) solid 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.links {
+    color: rgba(251, 146, 60);
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.links:hover, .link_p:hover {
+    cursor: pointer;
+    text-shadow: rgba(251, 146, 60) 0px 0px 0.8px;
+}
+.links svg {
+    fill: rgba(251, 146, 60);
+    margin-right: 10px;
+    width: 25px;
+}
+
+#me_desc {
+    width: 75%;
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    font-stretch: ultra-expanded;
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#links {
+    opacity: 1;
+    color: #fdba74;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#proj_cont {
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    align-self: flex-start;
+    flex-direction: column;
+}
+#proj_title {
+    width: 100%;
+    font-size: 30px;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 15px 0px;
+    border-bottom: #333333 solid 0.5px;    
+}
+#projs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 20px;
+    row-gap: 20px;
+    margin-top: 20px;
+}
+.project_card {
+    width: calc(100% - 40px);
+    height: auto;
+    background-color: #28282933;
+    border: #282829 solid 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+.link_p {
+    width: fit-content;
+    height: 2rem;
+    padding: 0.1rem 0.5rem;
+    background-color: #FB923C33;
+    border: rgba(251, 146, 60, 0.3) solid 1px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: rgba(251, 146, 60);
+    font-weight: 600;
+    font-size: 14px;
+}
+.desc_p {
+    font-weight: 400;
+    color: #ffffff;
+}
+.title_p {
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media (max-width: 800px) {
+    #logo {
+        width: fit-content;
+        margin: 0px;
+        margin-left: 20px;
+        font-size: 0.8rem;
+    }
+    header {
+        gap: 5px;
+    }
+    .header_comp {
+        margin: 0px 10px;
+    }
+    #title {
+        font-size: 2.2rem;
+    }
+    #proj_title {
+        font-size: 1.8rem;
+    }
+    #subtitle, #me_desc, #links_cont, .desc_p {
+        font-size: 1rem;
+    }
+    #names {
+        font-size: 0.8rem;
+    }
+    .link_p, .links {
+        font-size: 0.9rem;
+    }
+    .title_p {
+        font-size: 1.4rem;
+    }
+
+    #me {
+        gap: 0px;
+    }
+    #me_desc {
+        width: 100%;
+    }
+    #profileimg {
+        display: none;
+    }
+}
