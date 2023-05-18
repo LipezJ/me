@@ -6,7 +6,7 @@ export default function Me() {
         <React.Fragment>
             <div id='me'>
                 <div id='profile'>
-                    <img id='profileimg' src="/me_profile.jpg" alt="Image alt text" />
+                    <img id='profileimg' src="http://127.0.0.1:4000/profileimg" alt="Image alt text" />
                 </div>
                 <div id='me_name'>
                     <div id='title'>Lipez</div>
