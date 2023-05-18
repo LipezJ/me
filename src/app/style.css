@@ -313,8 +313,7 @@ footer {
     margin-right: 10px;
 }
 #swc_cred a:hover {
-    color: var(--footer-color-text);
-    font-weight: 600;
+    color: var(--gen-text-color);
 }
 
 @media (max-width: 800px) {

@@ -18,7 +18,7 @@ export default function Footer() {
                 </div>
             </div>
             <div id='swc_cred'>
-                    <p>based on the design of </p>
+                    <p>based on the design of</p>
                     <a href='https://swc.rs/' about='blank'>swc.rc</a>
             </div>
         </footer>
