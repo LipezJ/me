@@ -1,0 +1,52 @@
+
+:root {
+  --backgroun-color: #111111;
+
+  --header-texr-color: #9CA3AF;
+  --header-color-search: #282829;
+
+  --gen-text-color: #ffffff;
+  --gen-text-color-secondary: #333333;
+  --gen-color-border: #333333;
+  --gen-color-secundary: #4B5563;
+  --gen-subtext-color-secundary: #4B5563;
+  --gen-point-color: #333333;
+  
+  --proj-color-background: #28282933;
+  --proj-color-border: #282829;
+
+  --links-color-background: #FB923C33;
+  --links-color-text: rgba(251, 146, 60);
+  --links-color-shadow: rgba(251, 146, 60);
+  --links-color-border: rgba(251, 146, 60, 0.3);
+
+  --footer-color-background: rgba(23,23,23);
+  --footer-color-button: #212223;
+  --footer-color-text: #4B5563;
+}
+
+:root.light {
+  --backgroun-color: #ffffff;
+
+  --header-texr-color: #4B5563;
+  --header-color-search: #dbddc7;
+
+  --gen-text-color: #111111;
+  --gen-text-color-secondary: #9CA3AF;
+  --gen-color-border: #DDDDDD;
+  --gen-color-secundary: #F3F4F6;
+  --gen-subtext-color-secundary: #4B5563;
+  --gen-point-color: #DDDDDD;
+  
+  --proj-color-background: #dbddc733;
+  --proj-color-border: #dbddc7;
+
+  --links-color-background: #FB923C33;
+  --links-color-text: rgba(251, 146, 60);
+  --links-color-shadow: rgba(251, 146, 60);
+  --links-color-border: rgba(251, 146, 60, 0.3);
+
+  --footer-color-background: #F3F4F6;
+  --footer-color-button: #F3F4F6;
+  --footer-color-text: #4B5563;
+}
