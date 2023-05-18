@@ -1,6 +1,5 @@
 import 'next/image'
 import styles from './style.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 import Header from './components/Header.js'
 import General from './components/General.js'
