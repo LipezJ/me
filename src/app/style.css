@@ -26,6 +26,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 60px;
 }
 header, nav, ul {
@@ -136,7 +137,7 @@ header {
 
 #links_cont {
     width: auto;
-    height: 2rem;
+    height: auto;
     padding: 0.6rem 1rem;
     background-color: var(--links-color-background);
     border: var(--links-color-border) solid 1px;
@@ -180,6 +181,8 @@ header {
     opacity: 1;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 10px;
 }
 
@@ -211,20 +214,30 @@ header {
     width: calc(100% - 40px);
     height: auto;
     max-width: 340px;
-    height: auto;
     background-color: var(--proj-color-background);
     border: var(--proj-color-border) solid 1px;
     border-radius: 5px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    justify-content: center;
+    gap: 15px;
+    justify-content: space-between;
     padding: 20px;
+}
+.project_card_p {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+#links_p_cont {
+    display: flex;
+    flex-direction: row;
+    align-self: baseline;
+    gap: .5rem;
 }
 .link_p {
     width: fit-content;
     height: 2rem;
-    padding: 0.1rem 0.5rem;
+    padding: 0.05rem 0.5rem;
     background-color: var(--links-color-background);
     border: var(--links-color-border) solid 1px;
     border-radius: 5px;
@@ -243,6 +256,16 @@ header {
     color: var(--gen-text-color);
     font-weight: 500;
     font-size: 20px;
+}
+.img_p {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+.img_p img {
+    width: 100%;
+    border-radius: 5px;
 }
 
 footer {
@@ -330,7 +353,7 @@ footer {
         gap: 5px;
     }
     .header_comp {
-        margin: 0px 10px;
+        margin: 0px 15px;
     }
     #title {
         font-size: 2.5rem;
@@ -359,5 +382,12 @@ footer {
     }
     #profileimg {
         display: none;
+    }
+    #isearch {
+        width: 100px;
+    }
+    ul {
+        gap: 10px;
+        margin-right: 15px;
     }
 }

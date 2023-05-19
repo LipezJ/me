@@ -32,9 +32,9 @@ export default function General() {
                             return <ProjectCard 
                                     key={index} 
                                     title={proj.name}  
-                                    src='https://via.placeholder.com/250x150'
+                                    src={proj.image}
                                     desc={proj.description}
-                                    link={proj.links.github}
+                                    links={proj.links}
                                 />
                                 
                         })
