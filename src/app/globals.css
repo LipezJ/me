@@ -23,6 +23,8 @@
   --footer-color-background: rgba(23,23,23);
   --footer-color-button: #212223;
   --footer-color-text: #4B5563;
+
+  --view-color-background: #2828297e;
 }
 
 :root.light {
@@ -49,4 +51,12 @@
   --footer-color-background: #F3F4F6;
   --footer-color-button: #F3F4F6;
   --footer-color-text: #4B5563;
+
+  --view-color-background: #dbddc77e;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
 }

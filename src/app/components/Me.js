@@ -10,7 +10,7 @@ export default function Me() {
                 </div>
                 <div id='me_name'>
                     <div id='title'>Lipez</div>
-                    <div id='subtitle'>Programmer & Illustrator</div>
+                    <div id='subtitle'>Developer & Illustrator</div>
                     <div id='names'>@Lipezj  @Lpe_47</div>
                 </div>
             </div>

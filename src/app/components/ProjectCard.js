@@ -2,16 +2,17 @@ import React from 'react'
 import '../style.css'
 
 import LinksProject from './LinksProject'
+import ViewImg from './ViewImg'
 
 export default function ProjectCard(props) {
     return (
         <div className='project_card'>
-            <div className='project_card_p '>
-                <div className='title_p'>
+            <div className='title_p'>
                     {props.title}
-                </div>
+            </div>
+            <div className='project_card_p '>
                 <div className='img_p'>
-                    <img src={props.src} alt="" />
+                    <ViewImg src={props.src}/>
                 </div>
                 <div className='desc_p'>
                     {props.desc}

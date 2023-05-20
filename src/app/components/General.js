@@ -14,12 +14,9 @@ export default function General() {
     useEffect(() => {
         fetch('http://localhost:4000/projects')
         .then(response => response.json())
-        .then(data => setProjects(data))
-        .catch(error => console.error(error));
+        .then(data => setProjects(data));
     }, []);
-
-    console.log(projects);
-
+    
     return (
         <div id='general'>
             <Me />

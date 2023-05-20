@@ -4,10 +4,10 @@ import '../style.css'
 export default function Header() {
     return (
         <header>
-            <div className='header_comp' id='logo'>리페스</div>
+            <div className='header_comp' id='logo'><a href='/'>리페스</a></div>
             <nav className='header_comp'>
                 <ul>
-                    <li>Blog</li>
+                    <li><a href='/blog'>Blog</a></li>
                     <li>
                         <form action="" name='searchform'>
                             <input type="text" name='isearch' id='isearch' placeholder='Search...' />
