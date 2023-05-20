@@ -26,14 +26,16 @@ export default function General() {
                 <div id='projs'>
                     { projects ?
                         Object.values(projects).map((proj, index) => {
+                            console.log(proj)
+                            console.log(proj.languages)
                             return <ProjectCard 
                                     key={index} 
                                     title={proj.name}  
                                     src={proj.image}
                                     desc={proj.description}
                                     links={proj.links}
+                                    lang={{...proj.languages}}
                                 />
-                                
                         })
                         :
                         <div>Loading...</div>

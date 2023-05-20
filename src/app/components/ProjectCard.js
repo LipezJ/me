@@ -3,12 +3,27 @@ import '../style.css'
 
 import LinksProject from './LinksProject'
 import ViewImg from './ViewImg'
+import Languages from './Languages'
 
 export default function ProjectCard(props) {
+    console.log(props)
     return (
         <div className='project_card'>
-            <div className='title_p'>
-                    {props.title}
+            <div>
+                <div className='head_p'>
+                    <div className='title_p'>
+                            {props.title}
+                    </div>
+                    <Languages langs={props.lang} />
+                </div>
+                <div>
+                    {
+                        props.languages &&
+                        props.languages.map((lang, index) => {
+                            return 
+                        })
+                    }
+                </div>
             </div>
             <div className='project_card_p '>
                 <div className='img_p'>
