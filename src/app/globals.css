@@ -2,14 +2,14 @@
 :root {
   --backgroun-color: #111111;
 
-  --header-texr-color: #9CA3AF;
+  --header-text-color: #86868a;
   --header-color-search: #282829;
 
   --gen-text-color: #ffffff;
   --gen-text-color-secondary: #333333;
   --gen-color-border: #333333;
   --gen-color-secundary: #4B5563;
-  --gen-subtext-color-secundary: #4B5563;
+  --gen-subtext-color-secundary: #86868a;
   --gen-point-color: #333333;
   
   --proj-color-background: #28282933;
@@ -22,7 +22,7 @@
 
   --footer-color-background: rgba(23,23,23);
   --footer-color-button: #212223;
-  --footer-color-text: #4B5563;
+  --footer-color-text: #86868a;
 
   --view-color-background: #2828297e;
 }
@@ -30,14 +30,14 @@
 :root.light {
   --backgroun-color: #ffffff;
 
-  --header-texr-color: #4B5563;
+  --header-text-color: #4B5563;
   --header-color-search: #dbddc7;
 
   --gen-text-color: #111111;
   --gen-text-color-secondary: #9CA3AF;
   --gen-color-border: #DDDDDD;
   --gen-color-secundary: #F3F4F6;
-  --gen-subtext-color-secundary: #4B5563;
+  --gen-subtext-color-secundary: #3f4752;
   --gen-point-color: #DDDDDD;
   
   --proj-color-background: #dbddc733;

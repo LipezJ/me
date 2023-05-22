@@ -1,4 +1,3 @@
-import React from 'react'
 import '../style.css'
 
 export default function LinksProject(props) {
@@ -10,7 +9,8 @@ export default function LinksProject(props) {
                     return <a 
                             key={index} className='link_p' 
                             href={props.links[name]}
-                            target='blank'>
+                            title={'view ' + name}
+                            target='_blank'>
                                 view {name}
                             </a>
                 })

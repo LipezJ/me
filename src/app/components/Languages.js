@@ -1,4 +1,3 @@
-import React from 'react'
 import '../style.css'
 import { SiPython, SiCplusplus, SiC, SiJavascript } from 'react-icons/si'
 
@@ -10,7 +9,6 @@ const langs = {
 }
 
 export default function Languages(props) {
-    console.log(props)
     return (
         <div className='lang_c'>
             {

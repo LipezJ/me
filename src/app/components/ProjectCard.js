@@ -1,4 +1,3 @@
-import React from 'react'
 import '../style.css'
 
 import LinksProject from './LinksProject'
@@ -6,7 +5,6 @@ import ViewImg from './ViewImg'
 import Languages from './Languages'
 
 export default function ProjectCard(props) {
-    console.log(props)
     return (
         <div className='project_card'>
             <div>
@@ -26,9 +24,7 @@ export default function ProjectCard(props) {
                 </div>
             </div>
             <div className='project_card_p '>
-                <div className='img_p'>
-                    <ViewImg src={props.src}/>
-                </div>
+                <ViewImg src={props.src} alt={props.title} />
                 <div className='desc_p'>
                     {props.desc}
                 </div>

@@ -1,6 +1,6 @@
 'use client'
 
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import '../style.css'
 
 import ProjectCard from './ProjectCard'
@@ -12,7 +12,7 @@ export default function General() {
     const [projects, setProjects] = useState(null);
 
     useEffect(() => {
-        fetch('http://localhost:4000/projects')
+        fetch('https://meapi.fly.dev/projects')
         .then(response => response.json())
         .then(data => setProjects(data));
     }, []);
@@ -26,8 +26,6 @@ export default function General() {
                 <div id='projs'>
                     { projects ?
                         Object.values(projects).map((proj, index) => {
-                            console.log(proj)
-                            console.log(proj.languages)
                             return <ProjectCard 
                                     key={index} 
                                     title={proj.name}  

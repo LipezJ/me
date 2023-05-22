@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Roboto:wght@400;500;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&display=swap');
 
 body {
     background-color: var(--backgroun-color);
@@ -40,7 +40,7 @@ ul {
     margin-right: 25px;
 }
 li a {
-    color: var(--gen-subtext-color-secundary);
+    color: var(--header-text-color);
 }
 li:hover, #github:hover, li a:hover {
     color: var(--gen-text-color);
@@ -48,7 +48,7 @@ li:hover, #github:hover, li a:hover {
 }
 header {
     background-color: var(--backgroun-color);
-    color: var(--header-texr-color);
+    color: var(--header-text-color);
     border-bottom: solid 0.5px var(--gen-color-border);
     position: fixed;
     justify-content: space-between;
@@ -266,10 +266,28 @@ header {
     border-radius: 5px;
     object-fit: cover;
     object-position: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 .img_p img {
     width: 100%;
     border-radius: 5px;
+}
+.img_p_zoom {
+    display: none;
+    position: absolute;
+    margin: 5px;
+    font-size: 1.5rem;
+}
+.img_p_zoom svg, .zoom_view svg {
+    color: var(--gen-subtext-color-secundary);
+}
+.img_p:hover {
+    cursor: pointer;
+}
+.img_p:hover .img_p_zoom {
+    display: block;
 }
 
 footer {
@@ -355,9 +373,11 @@ footer {
     z-index: 100;
     background-color: var(--view-color-background);
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+#view_img_cont:hover {
+    cursor: pointer;
 }
 #view_img {
     display: flex;
@@ -369,9 +389,14 @@ footer {
     object-position: center;
     border-radius: 5px;
 }
-.img_p:hover {
-    cursor: pointer;
+.zoom_view {
+    position: absolute;
+    z-index: 101;
+    font-size: 1.5rem;
+    bottom: 20px;
+    right: calc(50% - 0.75rem);
 }
+
 .head_p {
     display: flex;
     flex-direction: row;
