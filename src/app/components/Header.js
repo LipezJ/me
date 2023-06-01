@@ -1,13 +1,14 @@
 import '../style.css'
 import { FaGithub } from 'react-icons/fa'
 
-export default function Header() {
+export default function HeaderCont() {
     return (
-        <header>
+        <div id='header'>
             <div className='header_comp' id='logo'><a href='/'>리페스</a></div>
             <nav className='header_comp'>
                 <ul>
                     <li><a href='/blog' title='blog'>Blog</a></li>
+                    <li><a href='/links' title='links'>Links</a></li>
                     <li>
                         <form action="" name='searchform'>
                             <input type="text" name='isearch' id='isearch' placeholder='Search...' />
@@ -20,6 +21,6 @@ export default function Header() {
                     </a>
                 </div>
             </nav>
-        </header>
+        </div>
     )
 }

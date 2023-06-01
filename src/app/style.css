@@ -28,7 +28,7 @@ main {
     justify-content: center;
     gap: 60px;
 }
-header, nav, ul {
+#header, nav, ul {
     display: flex;
     align-items: center;
     font-size: 12px;
@@ -46,7 +46,7 @@ li:hover, #github:hover, li a:hover {
     color: var(--gen-text-color);
     cursor: pointer;
 }
-header {
+#header {
     background-color: var(--backgroun-color);
     color: var(--header-text-color);
     border-bottom: solid 0.5px var(--gen-color-border);
@@ -100,6 +100,7 @@ header {
     flex-direction: column;
     align-items: center;
     width: 85%;
+    margin-bottom: 50px;
 }
 #me {
     margin-top: 110px;
@@ -129,6 +130,7 @@ header {
 #subtitle {
     color: var(--gen-subtext-color-secundary);
     font-size: 25px;
+    text-align: center;
 }
 #names {
     color: var(--gen-subtext-color-secundary);
@@ -137,7 +139,7 @@ header {
     margin-top: 10px;
 }
 
-#links_cont {
+.links_cont {
     width: auto;
     height: auto;
     padding: 0.6rem 1rem;
@@ -225,6 +227,10 @@ header {
     gap: 15px;
     justify-content: space-between;
     padding: 20px;
+}
+.project_card:hover {
+    background-color: var(--proj-color-hover);
+    transition: .4s;
 }
 .project_card_p {
     display: flex;
@@ -415,6 +421,10 @@ footer {
     height: auto;
 }
 
+#loading {
+    margin: 40px;
+}
+
 @media (max-width: 800px) {
     #logo {
         width: fit-content;
@@ -422,7 +432,7 @@ footer {
         margin-left: 20px;
         font-size: 0.8rem;
     }
-    header {
+    #header {
         gap: 5px;
     }
     .header_comp {

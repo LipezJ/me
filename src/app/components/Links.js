@@ -3,7 +3,7 @@ import { FaGithub, FaGithubSquare, FaTwitterSquare, FaInstagramSquare } from 're
 
 export default function Footer() {
     return (
-        <div id='links_cont'>
+        <div className='links_cont'>
             <div id='links'>
                 <a className='links' href='https://twitter.com/lpe_47' target='_blank' title='twitter'>
                     <FaTwitterSquare />

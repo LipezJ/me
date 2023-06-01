@@ -14,6 +14,7 @@
   
   --proj-color-background: #28282933;
   --proj-color-border: #282829;
+  --proj-color-hover: #28282950;
 
   --links-color-background: #FB923C33;
   --links-color-text: rgba(251, 146, 60);
@@ -42,6 +43,7 @@
   
   --proj-color-background: #dbddc733;
   --proj-color-border: #dbddc7;
+  --proj-color-hover: #fae2b140;
 
   --links-color-background: #FB923C33;
   --links-color-text: rgba(251, 146, 60);

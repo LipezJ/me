@@ -36,7 +36,7 @@ export default function General() {
                                 />
                         })
                         :
-                        <div>Loading...</div>
+                        <div id='loading'>Loading...</div>
                     }
                 </div>
             </div>
