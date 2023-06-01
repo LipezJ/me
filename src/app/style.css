@@ -425,6 +425,27 @@ footer {
     margin: 40px;
 }
 
+#not_found_cont {
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#not_found_cont #title {
+    text-align: center;
+}
+#not_found_cont #link {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+#not_found_cont #link:hover {
+    font-weight: 500;
+    transition: 1;
+}
+
 @media (max-width: 800px) {
     #logo {
         width: fit-content;

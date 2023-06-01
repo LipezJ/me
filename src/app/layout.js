@@ -2,6 +2,7 @@ import './globals.css'
 import './style.css'
 import { Inter } from 'next/font/google'
 
+import Head from 'next/head'
 import HeaderCont from './components/Header'
 import Footer from './components/Footer'
 
