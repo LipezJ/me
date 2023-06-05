@@ -20,8 +20,8 @@ export default function LinksPage() {
                         <img src='https://meapi.fly.dev/img/me_profile-comp' alt='links' />
                     </div>
                     <div id='me_name'>
-                        <div id='title'>Lipez</div>
-                        <div id='subtitle'>Developer & Illustrator</div>
+                        <div id='title_links'>Lipez</div>
+                        <div id='subtitle_links'>Developer & Illustrator</div>
                     </div>
                 </div>
                 <div id='links_cont_page'>

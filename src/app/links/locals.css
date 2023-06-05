@@ -14,12 +14,15 @@
     gap: 40px;
     justify-content: center;
 }
-#title {
+#title_links {
     font-size: 40px;
     margin: 5px;
+    color: var(--gen-text-color);
+    font-weight: 600;
 }
-#subtitle {
+#subtitle_links {
     font-size: 15px;
+    text-align: center;
 }
 #names {
     font-size: 10px;
@@ -39,18 +42,18 @@
 .link_cont .links_cont {
     text-align: center;
     font-weight: 500;
+    background-color: var(--links-color-background);
+    border: var(--links-color-hover) 1px solid;
 }
 .link {
     width: 80vw;
     max-width: 500px;
     padding: 20px;
     margin: 0px;
-    background-color: var(--proj-color-background);
-    border: var(--proj-color-border) solid 1px;
 }
 .link:hover {
     cursor: pointer;
-    background-color: var(--proj-color-hover);
+    background-color: var(--links-color-hover);
     transition: .4s;
 }
 

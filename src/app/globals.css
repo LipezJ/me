@@ -1,4 +1,3 @@
-
 :root {
   --backgroun-color: #111111;
 
@@ -26,6 +25,10 @@
   --footer-color-text: #86868a;
 
   --view-color-background: #2828297e;
+
+  --links-color-background: #FB923C33;
+  --links-color-text: rgba(251, 146, 60);
+  --links-color-hover: #fb923c52;
 }
 
 :root.light {
