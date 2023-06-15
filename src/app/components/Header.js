@@ -8,7 +8,7 @@ export default function HeaderCont() {
             <div className='header_comp' id='logo'><Link href='/' title='home' >리페스</Link></div>
             <nav className='header_comp'>
                 <ul>
-                    <li><a href="/blog" title='blog'>Blog</a></li>
+                    <li><Link href="/blog" title='blog'>Blog</Link></li>
                     <li><Link href='/links' title='links'>Links</Link></li>
                     <li>
                         <form action="" name='searchform'>
