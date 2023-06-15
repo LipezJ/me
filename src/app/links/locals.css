@@ -23,6 +23,7 @@
 #subtitle_links {
     font-size: 15px;
     text-align: center;
+    color: var(--gen-subtext-color-secundary);
 }
 #names {
     font-size: 10px;

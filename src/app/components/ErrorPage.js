@@ -13,8 +13,8 @@ export default function NotFound(props) {
             <div id='not_found_cont'>
                 <div id='title'>{props.title}</div>
                 <div id='subtitle'>{props.desc}</div>
-                <div id='link'>
-                    <Link href='/' >Go Home</Link>
+                <div>
+                    <Link href='/' className='links links_cont' style={{marginTop: "0px"}} >Go Home</Link>
                 </div>
             </div>
         </div>

@@ -1,7 +1,7 @@
 import '../style.css'
 import { FaGithub, FaGithubSquare, FaTwitterSquare, FaInstagramSquare } from 'react-icons/fa'
 
-export default function Footer() {
+export default function Links() {
     return (
         <div className='links_cont'>
             <div id='links'>
