@@ -3,7 +3,7 @@ export default function Me() {
         <>
             <div id='me'>
                 <div id='profile'>
-                    <img title='lipez' id='profileimg' src="https://meapi.fly.dev/profileimg" alt="lipez" />
+                    <img title='lipez' id='profileimg' src="./img/me_profile.png" alt="lipez" />
                 </div>
                 <div id='me_name'>
                     <div id='title'>Lipez</div>

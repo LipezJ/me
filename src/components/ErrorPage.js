@@ -1,12 +1,8 @@
-import Head from 'next/head'
 import Link from 'next/link'
  
 export default function NotFound(props) {
   return (
     <> 
-        <Head>
-            <title>{props.title} | Lipez</title>
-        </Head>
         <div id='not_found'>
             <div id='not_found_cont'>
                 <div id='title'>{props.title}</div>

@@ -1,21 +1,19 @@
 import './locals.css'
 import fs from 'fs'
 
-import Head from 'next/head'
 import Links from '../../components/Links'
+import { metadata } from '../layout';
 
 export default function LinksPage() {
 
     const links = JSON.parse(fs.readFileSync('./public/data/links.json', 'utf8'));
-
+    metadata.title = 'Links | Lipez'
+    
     return (
             <>
-                <Head>
-                    <title>Lipez | Links</title>
-                </Head>
                 <div id='me'>
                     <div id='prof_img_cont'>
-                        <img src='https://meapi.fly.dev/img/me_profile-comp' alt='links' />
+                        <img src='./img/me_profile_comp.png' alt='links' />
                     </div>
                     <div id='me_name'>
                         <div id='title_links'>Lipez</div>

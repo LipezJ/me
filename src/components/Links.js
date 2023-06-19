@@ -1,4 +1,4 @@
-import { FaGithub, FaGithubSquare, FaTwitterSquare, FaInstagramSquare } from 'react-icons/fa'
+import { FaGithubSquare, FaTwitterSquare, FaInstagramSquare } from 'react-icons/fa'
 
 export default function Links() {
     return (
