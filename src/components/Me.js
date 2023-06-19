@@ -1,9 +1,6 @@
-import { Fragment } from 'react'
-import '../style.css'
-
 export default function Me() {
     return (
-        <Fragment>
+        <>
             <div id='me'>
                 <div id='profile'>
                     <img title='lipez' id='profileimg' src="https://meapi.fly.dev/profileimg" alt="lipez" />
@@ -22,6 +19,6 @@ export default function Me() {
                     I like programming for the backend but the frontend is also important for me, most of my projects have been to help develop as JV, others to simply have fun and learn how to PONG and PONG-ONLINE, also projects like the online CHAT are great too.
                 </p>
             </div>
-        </Fragment>
+        </>
     )
 }

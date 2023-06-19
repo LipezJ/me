@@ -1,6 +1,6 @@
-import './style.css'
+import '../styles/style.css'
 
-import General from './components/General.js'
+import General from '../islands/General.js'
 
 export default function Home() {
   return (

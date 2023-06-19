@@ -1,9 +1,7 @@
 'use client'
 
 import { useState, Fragment } from 'react'
-import '../style.css'
 import { TbZoomInFilled, TbZoomOutFilled } from 'react-icons/tb'
-
 
 export default function ViewImg(props) {
     const [view, setView] = useState(false);
@@ -11,7 +9,7 @@ export default function ViewImg(props) {
         setView(!view);
     }
     return (
-        <Fragment>
+        <>
             { view &&
                 <div id='view_img_cont' onClick={changeView}>
                     <div id='view_img'>
@@ -28,6 +26,6 @@ export default function ViewImg(props) {
                     <TbZoomInFilled />
                 </div>
             </div>
-        </Fragment>
+        </>
     )
 }

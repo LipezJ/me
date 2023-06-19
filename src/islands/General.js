@@ -1,11 +1,10 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import '../style.css'
-
-import ProjectCard from './ProjectCard'
-import Me from './Me'
-import Links from './Links'
+import '../styles/style.css'
+import ProjectCard from '../components/ProjectCard'
+import Me from '../components/Me'
+import Links from '../components/Links'
 
 export default function General() {
 
@@ -18,7 +17,7 @@ export default function General() {
     }, []);
     
     return (
-        <div id='general'>
+        <>
             <Me />
             <Links />
             <div id='proj_cont'>
@@ -40,6 +39,6 @@ export default function General() {
                     }
                 </div>
             </div>
-        </div>
+        </>
     )
 }

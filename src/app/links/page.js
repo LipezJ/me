@@ -1,17 +1,17 @@
-import '../style.css'
-import '../globals.css'
+import '../../styles/style.css'
+import '../../styles/globals.css'
 import './locals.css'
 import fs from 'fs'
 
 import Head from 'next/head'
-import Links from '../components/Links'
+import Links from '../../components/Links'
 
 export default function LinksPage() {
 
     const links = JSON.parse(fs.readFileSync('./public/data/links.json', 'utf8'));
 
     return (
-            <div id='links_main'>
+            <>
                 <Head>
                     <title>Lipez | Links</title>
                 </Head>
@@ -35,6 +35,6 @@ export default function LinksPage() {
                         }
                     </div>
                 </div>
-            </div>
+            </>
     )
 }

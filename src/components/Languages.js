@@ -1,4 +1,3 @@
-import '../style.css'
 import { SiPython, SiCplusplus, SiC, SiJavascript } from 'react-icons/si'
 
 const langs = {

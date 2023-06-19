@@ -1,6 +1,4 @@
-import '../style.css'
-
-import { toggleTheme } from '../../code/functions.js'
+import { toggleTheme } from '../islands/functions.js'
 
 export default function Footer() {
     return (

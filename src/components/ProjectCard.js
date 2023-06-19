@@ -1,7 +1,5 @@
-import '../style.css'
-
 import LinksProject from './LinksProject'
-import ViewImg from './ViewImg'
+import ViewImg from '../islands/ViewImg'
 import Languages from './Languages'
 
 export default function ProjectCard(props) {
@@ -13,14 +11,6 @@ export default function ProjectCard(props) {
                             {props.title}
                     </div>
                     <Languages langs={props.lang} />
-                </div>
-                <div>
-                    {
-                        props.languages &&
-                        props.languages.map((lang, index) => {
-                            return 
-                        })
-                    }
                 </div>
             </div>
             <div className='project_card_p '>

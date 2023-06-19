@@ -1,5 +1,3 @@
-import '../style.css'
-
 export default function LinksProject(props) {
     return (
         <div className='links_p_cont'>
