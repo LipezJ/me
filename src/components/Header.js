@@ -1,4 +1,3 @@
-import '../styles/style.css'
 import { FaGithub } from 'react-icons/fa'
 import Link from 'next/link'
 

@@ -1,5 +1,3 @@
-import '../../styles/style.css'
-import '../../styles/globals.css'
 import './locals.css'
 import fs from 'fs'
 

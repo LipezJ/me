@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import '../styles/style.css'
 import ProjectCard from '../components/ProjectCard'
 import Me from '../components/Me'
 import Links from '../components/Links'

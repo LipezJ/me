@@ -42,7 +42,7 @@
     background-color: var(--links-color-background);
     border: var(--links-color-hover) 1px solid;
 }
-.link {
+a.links_cont.link {
     width: 80vw;
     max-width: 500px;
     padding: 20px;
