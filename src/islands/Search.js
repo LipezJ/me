@@ -22,7 +22,7 @@ export default function Search() {
 
   const search = async (searchQuery) => {
     try {
-      await fetch('http://localhost:4000/search/' + searchQuery)
+      await fetch('https://meapi.fly.dev/search/' + searchQuery)
       .then((res) => {
         return res.json()
       })

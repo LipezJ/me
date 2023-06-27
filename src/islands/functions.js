@@ -10,7 +10,7 @@ export const searchBlog = async (e) => {
     e.preventDefault();
     const query = document.getElementById('isearch').value;
     try {
-        const searchQuery = await fetch('http://localhost:4000/blog/search/' + query, {cache: 'no-cache'})
+        const searchQuery = await fetch('https://meapi.fly.dev/blog/search/' + query, {cache: 'no-cache'})
         .then(res => res.json())
         .then(data => {
             if (data[0].name) {

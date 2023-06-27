@@ -8,7 +8,7 @@ import { changeTitle } from '../layout'
 export default async function Blogs() {
   changeTitle('Blogs | Lipez')
 
-  const query = await fetch('http://localhost:4000/blog', { cache: 'no-cache'})
+  const query = await fetch('https://meapi.fly.dev/blog', { cache: 'no-cache'})
   const blogs = await query.json()
 
   return (

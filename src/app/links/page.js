@@ -7,7 +7,7 @@ export default async function LinksPage() {
 
     changeTitle('Links | Lipez')
 
-    const query = await fetch('http://localhost:4000/links', { cache: 'no-cache'})
+    const query = await fetch('https://meapi.fly.dev/links', { cache: 'no-cache'})
     const links = await query.json()
     
     return (
