@@ -1,7 +1,7 @@
 'use client'
 
-import { useState, Fragment } from 'react'
-import { TbZoomInFilled, TbZoomOutFilled } from 'react-icons/tb'
+import { useState } from 'react'
+import { HiZoomIn, HiZoomOut } from 'react-icons/hi'
 
 export default function ViewImg(props) {
     const [view, setView] = useState(false);
@@ -15,7 +15,7 @@ export default function ViewImg(props) {
                     <div id='view_img'>
                         <img src={props.src} alt={props.alt}/>
                         <div className='zoom_view'>
-                            <TbZoomOutFilled />
+                            <HiZoomOut />
                         </div>
                     </div>
                 </div>
@@ -23,7 +23,7 @@ export default function ViewImg(props) {
             <div className='img_p' onClick={changeView}>
                 <img title={props.alt}  src={props.src+'-comp'} alt={props.alt} />
                 <div className='img_p_zoom'>
-                    <TbZoomInFilled />
+                    <HiZoomIn />
                 </div>
             </div>
         </>

@@ -1,18 +1,18 @@
 import { FaGithub } from 'react-icons/fa'
 import Link from 'next/link'
 
+import Search from '@/islands/Search'
+
 export default function HeaderCont() {
     return (
-        <div id='header'>
+        <header>
             <div className='header_comp' id='logo'><Link href='/' title='home' >리페스</Link></div>
             <nav className='header_comp'>
                 <ul>
                     <li><Link href="/blog" title='blog'>Blog</Link></li>
                     <li><Link href='/links' title='links'>Links</Link></li>
                     <li>
-                        <form action="" name='searchform'>
-                            <input type="text" name='isearch' id='isearch' placeholder='Search...' />
-                        </form>
+                        <Search />
                     </li>
                 </ul>
                 <div id='github'>
@@ -21,6 +21,6 @@ export default function HeaderCont() {
                     </Link>
                 </div>
             </nav>
-        </div>
+        </header>
     )
 }

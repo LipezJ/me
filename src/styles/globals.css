@@ -24,11 +24,13 @@
   --footer-color-button: #212223;
   --footer-color-text: #86868a;
 
-  --view-color-background: #2828297e;
+  --view-color-background: #28282942;
 
   --links-color-background: #FB923C33;
   --links-color-text: rgba(251, 146, 60);
   --links-color-hover: #fb923c52;
+
+  --code-color-background: #28282933;
 }
 
 :root.light {
@@ -58,6 +60,8 @@
   --footer-color-text: #4B5563;
 
   --view-color-background: #dbddc77e;
+
+  --code-color-background: #FB923C33;
 }
 
 @media (prefers-color-scheme: dark) {

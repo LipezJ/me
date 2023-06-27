@@ -1,0 +1,32 @@
+.blog_img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 5px;
+}
+.blog_img_cont {
+  display: flex;
+  justify-content: center;
+}
+.blog_date {
+  font-size: small;
+  color: var(--gen-color-text);
+  align-self: flex-end;
+  margin-left: 20px;
+}
+.blog_desc {
+  font-size: 1rem;
+  padding: 5px;
+}
+@media (max-width: 1150px) {
+  .blog_cont {
+    width: 90%;
+  }
+}
+@media (max-width: 450px) {
+  .blog_cont {
+    width: 100%;
+  }
+  .blog_img {
+    max-width: 90%;
+  }
+}

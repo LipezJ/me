@@ -8,15 +8,18 @@ export default function ProjectCard(props) {
             <div>
                 <div className='head_p'>
                     <div className='title_p'>
-                            {props.title}
+                            {props.name}
                     </div>
-                    <Languages langs={props.lang} />
+                    <Languages langs={props.languages} />
                 </div>
             </div>
             <div className='project_card_p '>
-                <ViewImg src={props.src} alt={props.title} />
+                {
+                    props.image &&
+                    <ViewImg src={props.image} alt={props.name} />
+                }
                 <div className='desc_p'>
-                    {props.desc}
+                    {props.description}
                 </div>
             </div>
             <LinksProject links={props.links} />

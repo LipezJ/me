@@ -13,6 +13,10 @@ export const metadata = {
   description: 'Lipez a developer',
 }
 
+export const changeTitle = (title) => {
+  metadata.title = title
+}
+
 export default function RootLayout({ children }) {
   return (
     <html lang="en">

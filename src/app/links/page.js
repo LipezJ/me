@@ -1,13 +1,14 @@
 import './locals.css'
-import fs from 'fs'
 
 import Links from '../../components/Links'
-import { metadata } from '../layout';
+import { changeTitle } from '../layout';
 
-export default function LinksPage() {
+export default async function LinksPage() {
 
-    const links = JSON.parse(fs.readFileSync('./public/data/links.json', 'utf8'));
-    metadata.title = 'Links | Lipez'
+    changeTitle('Links | Lipez')
+
+    const query = await fetch('http://localhost:4000/links', { cache: 'no-cache'})
+    const links = await query.json()
     
     return (
             <>
@@ -25,7 +26,7 @@ export default function LinksPage() {
                     <div className='link_cont'>
                         {
                             links &&
-                            Object.values(links).map((link, index) => {
+                            links.map((link, index) => {
                                     return <a key={index} className='links_cont link' href={link.url} target='_blank' title={link.name}>{link.name}</a>
                             }) 
                         }

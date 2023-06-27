@@ -1,0 +1,52 @@
+.markdown img {
+  max-width: 70%;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  align-self: center;
+  margin-top: 10px;
+}
+.markdown h1, .markdown h2, .markdown h3 {
+  margin-top: 10px;
+  padding-bottom: 10px;
+}
+.markdown h1 {
+  border-bottom: solid 1px var(--gen-color-border);
+  margin-bottom: 10px;
+}
+.markdown h3 {
+  margin-left: 10px;
+}
+.markdown p {
+  margin: 10px 0px;
+  display: contents;
+}
+.markdown pre {
+  background-color: var(--code-color-background);
+  padding: 15px;
+  margin: 5px 0px 10px 0px;
+  border-radius: 5px;
+}
+.markdown pre code {
+  padding: 0;
+  margin: 0px 10px;
+}
+.markdown ul, .markdown ol {
+  margin: 10px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+.markdown ul {
+  list-style: disc;
+}
+.markdown ul li, .markdown ol li {
+  font-size: medium;
+}
+
+@media (max-width: 800px) {
+  .markdown img {
+    max-width: 90%;
+  }
+}
