@@ -1,9 +1,11 @@
+import Image from 'next/image'
+
 export default function Me() {
     return (
         <>
             <div id='me'>
                 <div id='profile'>
-                    <img title='lipez' id='profileimg' src="./img/me_profile.png" alt="lipez" />
+                    <Image title='lipez' id='profileimg' src="/img/me_profile.png" alt="lipez" width={300} height={300} />
                 </div>
                 <div id='me_name'>
                     <div id='title'>Lipez</div>

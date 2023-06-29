@@ -3,8 +3,6 @@
 }
 
 #prof_img_cont img {
-    width: 150px;
-    height: 150px;
     border-radius: 50%;
 }
 
@@ -58,10 +56,6 @@ a.links_cont.link {
     #me {
         flex-direction: column;
         gap: 5px;
-    }
-    #prof_img_cont img {
-        width: 100px;
-        height: 100px;
     }
     #title {
         font-size: 1.8rem;

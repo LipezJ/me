@@ -7,7 +7,7 @@ body {
 * {
     font-family: 'Roboto', sans-serif;
     color: var(--gen-text-color);
-    line-height: 1.4;
+    line-height: 1.5;
     margin: 0px;
     padding: 0px;
 }
@@ -427,7 +427,7 @@ footer {
 .blog_cont {
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 60%;
     margin-bottom: 20px;
 }
 #blogs {
@@ -477,9 +477,6 @@ footer {
     }
     #blogs {
         padding: 20px 10px;
-    }
-    #blog_cont {
-        width: 100%;
     }
     ul {
         gap: 10px;

@@ -38,14 +38,13 @@ export default function Search() {
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
         setViewResults(viewResults);
-        console.log('click', viewResults)
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [ref]);
+  }, [ref, viewResults]);
 
   return (
     <>

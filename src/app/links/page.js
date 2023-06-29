@@ -1,6 +1,8 @@
 import './locals.css'
 
 import Links from '../../components/Links'
+import Image from 'next/image'
+
 import { changeTitle } from '../layout';
 
 export default async function LinksPage() {
@@ -14,7 +16,7 @@ export default async function LinksPage() {
             <>
                 <div id='me'>
                     <div id='prof_img_cont'>
-                        <img src='./img/me_profile_comp.png' alt='links' />
+                        <Image src='/img/me_profile_comp.png' alt='lipez' width={150} height={150} />
                     </div>
                     <div id='me_name'>
                         <div id='title_links'>Lipez</div>
