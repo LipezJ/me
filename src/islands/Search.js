@@ -1,5 +1,7 @@
 'use client'
 
+import 'dotenv/config'
+
 import { useState, useEffect, useRef } from "react";
 import { FaAngleDoubleUp } from "react-icons/fa";
 import Link from "next/link";
@@ -24,7 +26,7 @@ export default function Search() {
 
   const search = async (searchQuery) => {
     try {
-      await fetch('https://meapi.fly.dev/search/' + searchQuery)
+      await fetch(process.env.API + '/search/' + searchQuery)
       .then((res) => {
         return res.json()
       })

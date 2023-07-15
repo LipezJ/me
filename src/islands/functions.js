@@ -1,5 +1,7 @@
 'use client'
 
+import 'dotenv/config'
+
 export const toggleTheme = () => {
     document.documentElement.classList.toggle('light');
     document.querySelector('html').style.colorScheme = 
@@ -10,7 +12,7 @@ export const searchBlog = async (e) => {
     e.preventDefault();
     const query = document.getElementById('isearch').value;
     try {
-        const searchQuery = await fetch('https://meapi.fly.dev/blog/search/' + query, {cache: 'no-cache'})
+        const searchQuery = await fetch(process.env.API + '/blog/search/' + query, {cache: 'no-cache'})
         .then(res => res.json())
         .then(data => {
             if (data[0].name) {
