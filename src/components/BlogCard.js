@@ -6,7 +6,7 @@ export default function BlogCard({ blog }) {
       {
         (blog.images && !blog.type ) &&
         <div className='blog_img_cont'>
-          <img className='blog_img' src={blog.images[0]} alt={blog.title} />
+          <img className='blog_img' src={blog.images[0].url} alt={blog.images[0].alt} loading="lazy" width={blog.images[0].size[0]} height={blog.images[0].size[1]}/>
         </div>
       }
       <div className='blog_date'>

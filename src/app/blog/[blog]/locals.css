@@ -1,3 +1,6 @@
+.markdown {
+  width: 70%;
+}
 .markdown img {
   max-width: 70%;
   height: auto;
@@ -44,9 +47,44 @@
 .markdown ul li, .markdown ol li {
   font-size: medium;
 }
+.markdown {
+  width: 65%;
+}
+
+.blog_article {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px 0px;
+}
+.attributes_b {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  gap: 10px;
+}
+.author_b {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
 
 @media (max-width: 800px) {
   .markdown img {
     max-width: 90%;
+  }
+  .blog_article {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .attributes_b {
+    width: 100%;
+  }
+  .blog_cont {
+    width: 100%;
   }
 }

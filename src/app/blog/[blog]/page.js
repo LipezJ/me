@@ -4,26 +4,52 @@ import { MDXRemote } from 'next-mdx-remote/rsc'
 import { changeTitle } from '@/app/layout'
 
 import Links from '@/components/Links'
+import ViewImg from '@/islands/ViewImg'
 
 const components  = {
-  Links
+  
 }
 
 export default async function Blog({ params }) {
 
   changeTitle('Lipez')  
 
-  const body = await fetch('http://localhost:4000/blog/'+ params.blog, {cache: "no-cache"})
+  const { body, attributes } = await fetch('https://meapi.fly.dev/blog/'+ params.blog, {cache: "no-cache"})
   .then(res => res.json())
   .then(res => {
-    return res.body
+    return res
   })
-  
+
   return (
-    <>
+    <div className='blog_article'>
       <div className="markdown blog_cont">
         <MDXRemote source={body} components={components}/>
       </div>
-    </>
+      <div className='attributes_b'>
+        <a className='author_card' href={attributes.author.url} about='_blank' title={attributes.author.name} >
+          {
+            attributes.author.image &&
+            <div className='author_b_img'>
+              <img src={attributes.author.image} alt={attributes.author.name} loading='lazy' />
+            </div>
+          }
+          <div className='author_b_name'>
+            author: {attributes.author.name}
+          </div>
+        </a>
+        <div className='tags_b_cont'>
+          {
+            attributes.topics &&
+            attributes.topics.map((topic, index) => {
+              return (
+                <div className='tag_b' key={index}>
+                  {topic}
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
+    </div>
   )
 }

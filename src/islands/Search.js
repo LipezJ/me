@@ -7,6 +7,8 @@ import Link from "next/link";
 import BlogCard from "../components/BlogCard";
 import ProjectCard from "../components/ProjectCard";
 
+import { blockMainOverflow } from "./functions";
+
 export default function Search() {
   const [ viewResults, setViewResults ] = useState(false);
   const [ searchResults, setSearchResults] = useState(null)
@@ -37,18 +39,22 @@ export default function Search() {
   useEffect(() => {
     function handleClickOutside(event) {
       if (ref.current && !ref.current.contains(event.target)) {
-        setViewResults(viewResults);
+        blockMainOverflow();
+        setViewResults(false);
       }
     }
     document.addEventListener("mousedown", handleClickOutside);
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [ref, viewResults]);
+  }, [ref]);
 
   return (
     <>
-      <div className="isearch" onClick={() => setViewResults(!viewResults)}>
+      <div className="isearch" onClick={() => {
+        setViewResults(!viewResults)
+        blockMainOverflow()
+      }}>
         Search...
       </div>
       {
@@ -56,7 +62,7 @@ export default function Search() {
         <div className="search_cont">
           <div className="search" ref={ref}>
             <div className="isearch_cont">
-              <input className="isearch search_i" type="text" placeholder="Search..." onChange={prompt} />
+              <input autoFocus className="isearch search_i" type="text" placeholder="Search..." onChange={prompt} />
             </div>
             <div className="search_results" style={{"max-height": "100%"}}>
               <h2>Results:</h2>

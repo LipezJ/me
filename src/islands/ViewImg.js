@@ -13,7 +13,7 @@ export default function ViewImg(props) {
             { view &&
                 <div id='view_img_cont' onClick={changeView}>
                     <div id='view_img'>
-                        <img src={props.src} alt={props.alt}/>
+                        <img src={props.src} alt={props.alt} loading='lazy'/>
                         <div className='zoom_view'>
                             <HiZoomOut />
                         </div>
@@ -21,7 +21,7 @@ export default function ViewImg(props) {
                 </div>
             }
             <div className='img_p' onClick={changeView}>
-                <img title={props.alt}  src={props.src+'-comp'} alt={props.alt} />
+                <img title={props.alt}  src={props.src+'-comp'} alt={props.alt} loading='lazy' />
                 <div className='img_p_zoom'>
                     <HiZoomIn />
                 </div>
