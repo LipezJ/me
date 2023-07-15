@@ -1,4 +1,5 @@
 import './locals.css'
+import 'dotenv/config'
 
 import Link from 'next/link'
 
@@ -8,7 +9,7 @@ import { changeTitle } from '../layout'
 export default async function Blogs() {
   changeTitle('Blogs | Lipez')
 
-  const query = await fetch('https://meapi.fly.dev/blog', { cache: 'no-cache'})
+  const query = await fetch(process.env.API + '/blog', { cache: 'no-cache'})
   const blogs = await query.json()
 
   return (
