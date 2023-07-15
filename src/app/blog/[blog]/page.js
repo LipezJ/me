@@ -1,4 +1,5 @@
 import './locals.css'
+import 'dotenv/config'
 
 import { MDXRemote } from 'next-mdx-remote/rsc'
 import { changeTitle } from '@/app/layout'
@@ -14,7 +15,7 @@ export default async function Blog({ params }) {
 
   changeTitle('Lipez')  
 
-  const { body, attributes } = await fetch('https://meapi.fly.dev/blog/'+ params.blog, {cache: "no-cache"})
+  const { body, attributes } = await fetch(process.env.API + '/blog/'+ params.blog, {cache: "no-cache"})
   .then(res => res.json())
   .then(res => {
     return res

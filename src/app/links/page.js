@@ -1,4 +1,5 @@
 import './locals.css'
+import 'dotenv/config'
 
 import Links from '../../components/Links'
 import Image from 'next/image'
@@ -9,7 +10,7 @@ export default async function LinksPage() {
 
     changeTitle('Links | Lipez')
 
-    const query = await fetch('https://meapi.fly.dev/links', { cache: 'no-cache'})
+    const query = await fetch(process.env.API + '/links', { cache: 'no-cache'})
     const links = await query.json()
     
     return (

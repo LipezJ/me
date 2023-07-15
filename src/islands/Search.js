@@ -31,7 +31,7 @@ export default function Search() {
       .then (res => {
         setSearchResults(res)
       })
-    } catch {
+    } catch (e) {
       setSearchResults(null)
     }
   }
