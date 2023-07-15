@@ -76,7 +76,11 @@ export default function Search() {
                     {searchResults.blogsQuery &&
                       searchResults.blogsQuery.map((blog, index) => {
                         return (
-                          <Link className='blog_card' href={'/blog/' + blog.name} onClick={() => setViewResults(!viewResults)} key={index}>
+                          <Link className='blog_card' href={'/blog/' + blog.name} onClick={() => {
+                            setViewResults(!viewResults)
+                            blockMainOverflow()
+                            }} key={index}
+                          >
                             <BlogCard key={index} blog={blog} />
                           </Link>
                         )
